@@ -54,8 +54,6 @@ Route::group(['middleware' => ['Language']], function () {
 	Route::post('/orcamento-next-question-v1', 'Backoffice\Questionario@checkquestion')->name('orcamentoNextQuestion');
 	Route::post('/orcamento-submit-v1', 'Backoffice\Questionario@submitresponse')->name('orcamentoSubmit');
 
-
-
 	/* SITE V2 */
 	Route::get('/', 'Site_v2\Home@page')->name('homePageV2');
 	Route::get('/obra/{id}', 'Site_v2\Obra@page')->name('obraPageV2');
